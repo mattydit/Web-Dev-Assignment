@@ -1,0 +1,414 @@
+* {box-sizing:border-box}
+
+#titleheader
+{
+  text-align: center;
+  font-size: 60px;
+  font-family: fantasy;
+  font-weight: bold;
+  color: whitesmoke;
+  text-shadow:
+  -2px -2px 0 #000,
+  -2px -2px 0 #000,
+  -2px 2px 0 #000,
+  2px 2px 0 #000;
+  background-color: #66101f;
+}
+
+body
+{
+    background-color: #eeffdb;
+}
+
+#navbar
+{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #8a8e91;
+}
+
+li
+{
+  float: left;
+}
+
+li a
+{
+  font-family: sans-serif;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active)
+{
+  background-color: #b8d4e3;
+}
+
+.active
+{
+  background-color: darkred;
+}
+
+.button
+{
+  text-align: left;
+  background-color: #3399ff;
+  border: 2px solid black;
+  color: white;
+  padding: 10px 32px;
+  font-weight: bold;
+}
+
+#pizzacenter
+{
+    max-width: 37%;
+    float: left;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #262728;
+    font-weight: bold;
+    padding-right: 0px;
+    
+}
+
+#pizzapic
+{
+    //margin-right: 150px;
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+ 
+}
+
+#welcome
+{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #262728;
+    font-weight: 800;
+}
+
+#textright
+{
+    float: right;
+    border: 2px solid black;
+    background-color: #855a5c;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: white;
+    text-shadow:
+    -1px -1px 0 #000,
+    -1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#notes
+{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    text-shadow:
+    -1px -1px 0 #000,
+    -1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+    color: white;
+}
+
+#noteshr
+{
+    border: 1px solid black;
+    
+}
+
+#orderbutton
+{
+    color: white;
+    font-weight: bold;
+    display: block;
+    width: 100%;
+    border: none;
+    background-color: darkred;
+    padding: 14px 28px;
+    font-size: 25px;
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.5s;
+}
+
+#orderbutton span
+{
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+#orderbutton span:after
+{
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+#orderbutton:hover span
+{
+    padding-right: 25px; 
+}
+
+#orderbutton:hover span:after
+{
+    opacity: 1;
+    right: 0;
+}
+
+.slideshowcontainer
+{
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+    
+}
+/* Hide images by default */
+.mySlide
+{
+    display: none;
+}
+
+.prev, .next
+{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6 ease;
+    border-radius: 0 3px 3px 0;
+}
+
+/*put the next button on the right */
+.next
+{
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover
+{
+    background-color: rgba(0,0,0,0.8);
+}
+
+.text
+{
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+.numbertext
+{
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+.dot
+{
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover
+{
+    background-color: #b8d4e3;
+}
+
+/* Fade animation */
+.fade
+{
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade 
+{
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade 
+{
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+form 
+{
+    border: 3px solid #8a8e91;
+    background-color: #b8d4e3;
+    font-family: Arial, Helvetica, sans-serif; 
+}
+
+input[type=text], input[type=password]
+{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+#loginbuttons
+{
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+#loginbuttons:hover
+{
+    opacity: 0.8;
+}
+
+#loginbuttons.cancelbutton
+{
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+
+.imglogin
+{
+    text-align: center;
+    margin: 24px 0 12px 0;
+}
+
+img.avatar
+{
+    width: 15%;
+    background-color: #66101f;
+}
+
+.form_container 
+{
+    padding: 16px;
+    background-color: #b8d4e3;
+}
+
+span.pass
+{
+    float: right;
+    padding-top: 16px;
+    
+}
+
+hr 
+{
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+.registerbutton
+{
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+
+.registerbutton:hover 
+{
+  opacity: 1;
+}
+
+/* Menu CSS */
+.menu_body
+{
+    max-width: 680px;
+    margin: 0 auto;
+    display: block;
+    color: #585b5d; 
+}
+
+.menu_section
+{
+    margin-bottom: 80px;
+    background-color: white;
+    margin-left: 150px;
+    margin-right: 150px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#menu_title
+{
+    font-family: georgia, sans-serif;
+    font-size: 50px;
+    display: block;
+    font-weight:normal;
+    margin: 20px 0; 
+    text-align: Center;
+    color: #585b5d;
+}
+
+.menu_item
+{
+    margin: 35px 0;
+    font-size: 18px;
+}
+
+.menu_item_name
+{
+    font-family: helvetica;
+    font-weight: bold;
+    border-bottom: 2px dotted rgb(213, 213, 213);
+}
+
+.menu_item_desc
+{
+    font-style: italic;
+    font-size: .9em;
+    line-height: 1.5em;
+}
+
+.menu_item_price
+{
+    font-weight: bold;
+    font-family: arial;
+    margin-top: -22px;
+    float: right;
+}
