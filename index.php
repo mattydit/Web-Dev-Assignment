@@ -46,7 +46,7 @@
         </div>
     </div>
     <div id="ordernow">
-        <button type="button" id="orderbutton"><span>Order Now </span></button>
+        <button type="button" id="orderbutton" onclick="window.location.href='menu.html'"><span>Order Now </span></button>
     </div>
     <div class="slideshowcontainer">
         <div class="mySlide fade">
