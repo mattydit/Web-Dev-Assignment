@@ -6,6 +6,7 @@
     Sergio's Pizza - Login
   </title>
   <link rel = "stylesheet" href = "style.css" />
+    <link rel="icon" href="images/logo.png">
 </head>
 <body>
   <div id="titleheader">
@@ -16,7 +17,7 @@
     <ul id="navbar">
       <li><a href="index.php">Home</a></li>
       <li><a href="menu.php">Menu</a></li>
-      <li><a href="locations.html">Locations</a></li>
+      <li><a href="locations.php">Locations</a></li>
       <li><a href="about.html">About us</a></li>
       <li style="float:right"><a class="active" href="login.php">Log in</a></li>
         <li style="float:right"><a href="register.php">Register</a></li>

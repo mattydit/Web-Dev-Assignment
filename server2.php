@@ -61,5 +61,64 @@ if (isset($_POST['login_user']))
     }
 }
 
+//Order
+$idresult = "";
+$row = "";
+$id = "";
+$order1 = $order2 = $order3 = $order4 = $order5 = $order6 = $order7 = $order8 = $order9 = "";
+
+$id_sql =  "SELECT id FROM pizzadb.account WHERE email = '".$email."' ";
+
+    
+
+if (isset($_POST['user_order']))
+{
+   
+    if (isset($_POST['order1']))
+    {
+        $order1 = $_POST['order1'];
+    }
+    if (isset($_POST['order2']))
+    {
+        $order2 = $_POST['order2'];    
+    }
+    if (isset($_POST['order3']))
+    {
+        $order3 = $_POST['order3'];    
+    }
+    if (isset($_POST['order4']))
+    {
+       $order4 = $_POST['order4']; 
+    }
+    if (isset($_POST['order5']))
+    {
+        $order5 = $_POST['order5'];
+    }
+    if (isset($_POST['order6']))
+    {
+        $order6 = $_POST['order6'];  
+    }
+    if (isset($_POST['order7']))
+    {
+        $order7 = $_POST['order7'];
+    }
+    if (isset($_POST['order8']))
+    {
+        $order8 = $_POST['order8'];
+    }
+     if (isset($_POST['order9']))
+    {
+        $order8 = $_POST['order9'];
+    }
+    
+    
+    $sql = "INSERT INTO pizzadb.order VALUES ('$id', '$order1', '$order2', '$order3', '$order4', '$order5', '$order6', '$order7', '$order8', '$order9')";
+
+     if (!mysqli_query($db, $sql))
+     {
+        die  (mysqli_error($db));
+     }
+}
+
 ?>
     

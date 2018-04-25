@@ -6,6 +6,7 @@
     Sergio's Pizza
   </title>
   <link rel = "stylesheet" href = "style.css" />
+    <link rel="icon" href="images/logo.png">
 </head>
 <body>
   <div id="titleheader">
@@ -15,9 +16,9 @@
     <?php if (isset($_SESSION['email'])) : ?>
   <nav>
     <ul id="navbar">
-      <li><a class="active" href="index.php">Home</a></li>
-      <li><a href="menu.php">Menu</a></li>
-      <li><a href="locations.html">Locations</a></li>
+      <li><a href="index.php">Home</a></li>
+      <li><a class="active" href="menu.php">Menu</a></li>
+      <li><a href="locations.php">Locations</a></li>
       <li><a href="about.html">About us</a></li>
         <li style="float:right"><a href="logout.php">Logout</a></li>
     </ul>
@@ -39,7 +40,7 @@
                 </div>
                 <img src="images/JustCheese.jpg" alt="margherita">
                 <label for="margherita"><b>Add to order</b></label>
-                <input type="checkbox" name="margherita" value="margherita">
+                <input type="checkbox" name="order1" value="margherita">
             </div>
             <div class="menu_item">
                 <div class="menu_item_name">
@@ -53,7 +54,7 @@
                 </div>
                 <img src="images/pepperoni.jpg" alt="pep">
                 <label for="pepperoni"><b>Add to order</b></label>
-                <input type="checkbox" name="pepperoni" value="pepperoni">
+                <input type="checkbox" name="order2" value="pepperoni">
             </div>
             <div class="menu_item">
                 <div class="menu_item_name">
@@ -67,7 +68,7 @@
                 </div>
                 <img src="images/hawaii.jpg" alt="pep">
                 <label for="hawaiian"><b>Add to order</b></label>
-                <input type="checkbox" name="hawaiian" value="hawaiian">
+                <input type="checkbox" name="order3" value="hawaiian">
             </div>
         </div>
     </div>
@@ -86,7 +87,7 @@
                 </div>
                 <img src="images/chicken.jpeg" alt="chicken">
              <label for="chicken_side"><b>Add to order</b></label>
-                <input type="checkbox" name="chicken_side" value="chicken_side">
+                <input type="checkbox" name="order4" value="chicken_side">
             </div>
             <div class="menu_item">
                 <div class="menu_item_name">
@@ -100,7 +101,7 @@
                 </div>
                 <img src="images/chips.jpeg" alt="chips">
                 <label for="chips"><b>Add to order</b></label>
-                <input type="checkbox" name="chips" value="chips">
+                <input type="checkbox" name="order5" value="chips">
             </div>
             <div class="menu_item">
                 <div class="menu_item_name">
@@ -114,7 +115,7 @@
                 </div>
                 <img src="images/garlic.jpg" alt="garlic">
                 <label for="garlic"><b>Add to order</b></label>
-                <input type="checkbox" name="garlic" value="garlic_bread">
+                <input type="checkbox" name="order6" value="garlic_bread">
             </div>
         </div>
     </div>
@@ -134,7 +135,7 @@
                 </div>
                 <img src="images/menu_cookies.jpg" alt="cookies">
              <label for="cookies"><b>Add to order</b></label>
-                <input type="checkbox" name="cookies" value="cookies">
+                <input type="checkbox" name="order7" value="cookies">
             </div>
             <div class="menu_item">
                 <div class="menu_item_name">
@@ -148,7 +149,7 @@
                 </div>
                 <img src="images/brownie.jpeg" alt="brownie">
                 <label for="brownie"><b>Add to order</b></label>
-                <input type="checkbox" name="brownie" value="brownie">
+                <input type="checkbox" name="order8" value="brownie">
             </div>
             <div class="menu_item">
                 <div class="menu_item_name">
@@ -162,7 +163,7 @@
                 </div>
                 <img src="images/ice.jpg" alt="ice-cream">
                 <label for="ice"><b>Add to order</b></label>
-                <input type="checkbox" name="ice" value="ice_cream">
+                <input type="checkbox" name="order9" value="ice_cream">
             </div>
         </div>
     </div>
@@ -173,7 +174,7 @@
     <ul id="navbar">
       <li><a href="index.php">Home</a></li>
       <li><a class="active" href="menu.html">Menu</a></li>
-      <li><a href="locations.html">Locations</a></li>
+      <li><a href="locations.php">Locations</a></li>
       <li><a href="about.html">About us</a></li>
       <li style="float:right"><a href="login.php">Log in</a></li>
         <li style="float:right"><a href="register.php">Register</a></li>

@@ -461,3 +461,60 @@ hr
     background-color: #66101f; /* Green */
     color: white;
 }
+
+#map 
+{   
+    float:right;
+    width: 550px;
+    height: 400px;
+}
+
+#map_descript 
+{
+    float: left;
+    font-family: sans-serif;
+    margin-bottom: 80px;
+    background-color: white;
+    margin-left: 15%;
+    margin-right: 15%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#delveryimg {
+    float: right;
+}
+
+.bottom_bar
+{
+    background-color: #855a5c;
+    overflow: hidden;
+    bottom: 0;
+    width: 100%;
+}
+
+.bottom_bar a
+{
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;   
+}
+
+.bottom_bar a:hover
+{
+    background-color: #bfc1c3;
+    color: black;    
+}
+
+.bottom_active
+{
+    background-color: #bfc1c3;
+}
+
+#location_header 
+{
+    text-align: center;
+}
