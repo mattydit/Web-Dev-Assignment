@@ -10,12 +10,12 @@
 <body>
   <div id="titleheader">
     Sergio's Pizza
-    <img src="logo.png" alt="logo" height="110" width="110" align="absmiddle"/>
+    <img src="images/logo.png" alt="logo" height="110" width="110" align="absmiddle"/>
   </div>
   <nav>
     <ul id="navbar">
       <li><a href="index.php">Home</a></li>
-      <li><a href="menu.html">Menu</a></li>
+      <li><a href="menu.php">Menu</a></li>
       <li><a href="locations.html">Locations</a></li>
       <li><a href="about.html">About us</a></li>
       <li style="float:right"><a href="login.php">Log in</a></li>

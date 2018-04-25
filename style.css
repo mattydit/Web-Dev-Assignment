@@ -1,5 +1,10 @@
 * {box-sizing:border-box}
 
+h3
+{
+    font-family: sans-serif;
+}
+
 #titleheader
 {
   text-align: center;
@@ -411,4 +416,48 @@ hr
     font-family: arial;
     margin-top: -22px;
     float: right;
+}
+
+
+#additem 
+{
+    
+}
+
+.pizzaform
+{
+    background-color: white;
+    font-style: italic;
+    font-family: sans-serif;
+}
+#menu_form_container input
+{
+    float: right;
+}
+
+#menu_form_container label
+{
+    float: right;
+}
+
+#submit_order_btn
+{
+    width: 100%;
+    background-color: #8a8e91;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+#submit_order_btn:hover
+{
+    background-color: #66101f; /* Green */
+    color: white;
 }

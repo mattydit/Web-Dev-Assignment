@@ -12,17 +12,17 @@
     Sergio's Pizza
     <img src="images/logo.png" alt="logo" height="110" width="110" align="absmiddle"/>
   </div>
+    <?php if (isset($_SESSION['email'])) : ?>
   <nav>
     <ul id="navbar">
-      <li><a href="index.php">Home</a></li>
-      <li><a class="active" href="menu.html">Menu</a></li>
+      <li><a class="active" href="index.php">Home</a></li>
+      <li><a href="menu.php">Menu</a></li>
       <li><a href="locations.html">Locations</a></li>
       <li><a href="about.html">About us</a></li>
-      <li style="float:right"><a href="login.php">Log in</a></li>
-        <li style="float:right"><a href="register.php">Register</a></li>
+        <li style="float:right"><a href="logout.php">Logout</a></li>
     </ul>
   </nav>
-    <?php if (isset($_SESSION['email'])) : ?>
+    
     <form method="post" id="menu_form_container" action="menu.php">
     <div class="menu_section">
         <div id="menu_title">Main Course</div>
@@ -169,6 +169,16 @@
         <button type="submit" id="submit_order_btn" name="user_order">Submit Order</button>
     </form>
     <?php else  : ?>
+    <nav>
+    <ul id="navbar">
+      <li><a href="index.php">Home</a></li>
+      <li><a class="active" href="menu.html">Menu</a></li>
+      <li><a href="locations.html">Locations</a></li>
+      <li><a href="about.html">About us</a></li>
+      <li style="float:right"><a href="login.php">Log in</a></li>
+        <li style="float:right"><a href="register.php">Register</a></li>
+    </ul>
+  </nav>
     <form>
      <div class="menu_section">
         <div id="menu_title">Main Course</div>
@@ -254,8 +264,7 @@
                     Salted French Fries golden on the outside and fluffy on the inside.
                 </div>
                 <img src="images/garlic.jpg" alt="garlic">
-                <label for="garlic"><b>Add to order</b></label>
-                <input type="checkbox" name="garlic" value="garlic_bread">
+                
             </div>
         </div>
     </div>
@@ -305,5 +314,6 @@
         </div>
     </div>
     </form>
+    <?php endif ?>
 </body>
 </html>
